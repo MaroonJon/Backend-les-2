@@ -17,7 +17,7 @@ In deze opdracht ga je oefenen met wat je tot nu geleerd hebt over beslissingsst
 
 ## Opdrachtbeschrijving
 
-Maak in het nieuwe Java project dat je hebt gemaakt een main klasse en een `public static void main` methode. 
+Maak in het nieuwe Java project dat je hebt gemaakt een appeltaartrecept.main klasse en een `public static void appeltaartrecept.main` methode. 
 
 We gaan het volgende appeltaart recept uit laten printen door de applicatie:
 
@@ -46,7 +46,7 @@ Stappen:
 - Leg de stroken kuislings op de appeltaart. Met wat extra deegstroken werk je de rand rondom af. Gebruik het overgebleven ei om de bovenkant van het deeg te bestrijken
 - Zet de taart iets onder het midden van de oven. Bak de taart in 60 minuten op 170 graden Celsius (boven en onderwarmte) gaar en goudbruin.
 
-Nou kunnen we dit alles natuurlijk in de main met een System.out.println zetten en dan werkt het. Maar dat is niet wat we gaan doen. We gaan de applicatie netjes opbouwen met de kennis die je tot zo ver hebt opgedaan. 
+Nou kunnen we dit alles natuurlijk in de appeltaartrecept.main met een System.out.println zetten en dan werkt het. Maar dat is niet wat we gaan doen. We gaan de applicatie netjes opbouwen met de kennis die je tot zo ver hebt opgedaan. 
 
 ![Appeltaart](./assets/appeltaart.jpg)
 
@@ -54,8 +54,8 @@ Nou kunnen we dit alles natuurlijk in de main met een System.out.println zetten 
 ## Randvoorwaarden
 De opdracht moet voldoen aan de volgende voorwaarden:
 
-- minimaal 3 klassen genaamd: `Ingredient`, `ApplePieRecipe` en `Main`
-- minimaal 3 variabelen, 2 constructors en getters en setters in `Ingredient`
+- minimaal 3 klassen genaamd: `appeltaartrecept.Ingredient`, `ApplePieRecipe` en `Main`
+- minimaal 3 variabelen, 2 constructors en getters en setters in `appeltaartrecept.Ingredient`
 - minimaal voor elk ingredient dat hierboven genoemd is een object geinstanieerd in `ApplePieRecipe`
 - minimaal voor elke stap die hierboven genoemd word een methode die de tekst via een `System.out.println()` uitprint
 - minimaal 1 object van het type `ApplePieRecipe` om de tekst uit te kunnen printen in de `Main` klasse
@@ -68,15 +68,15 @@ Let op: het is uitdagender om jouw eigen stappenplan te maken. Als je niet zo go
 
 2. Maak een nieuwe klasse aan genaamd  'Main'. Doe dit door met de rechter muisknop op de map 'SRC' te klikken, vervolgens klik je op 'New' en dan op 'Java class'. 
 
-3. Maak een `public static void main` methode aan.
+3. Maak een `public static void appeltaartrecept.main` methode aan.
 
-4. Maak een nieuwe klasse `Ingredient` aan, dit gaat het framework worden van een ingredient object
+4. Maak een nieuwe klasse `appeltaartrecept.Ingredient` aan, dit gaat het framework worden van een ingredient object
 
 5. Maak 3 **private** variabelen aan binnen de klasse, namelijk `amount`, `unit` en `name`. Geef deze de juiste datatypes.
 
 6. Maak een lege constructor aan en een constructor gevuld met alle 3 de variabelen. Zet ook voor alle variabelen zowel een getter als een setter in deze klasse.
 
-7. Maak een nieuwe klasse `ApplePieRecipe` aan, hier gaan we voor elk van de ingredient van `Ingredient` een object instantieren. 
+7. Maak een nieuwe klasse `ApplePieRecipe` aan, hier gaan we voor elk van de ingredient van `appeltaartrecept.Ingredient` een object instantieren. 
 
 8. Maak voor iedere stap een `public void ` methode aan genaamd step1, step2 enz. Zet vervolgens een `System.out.println()` in de body van de methode. En laat deze de tekst van de stap uitprinten.
 
@@ -84,9 +84,9 @@ Let op: het is uitdagender om jouw eigen stappenplan te maken. Als je niet zo go
 
 10. Maar hoe kunnen we nu deze aanspreken van uit de `Main` klasse? Ja, precies door een object aan te maken van het type `ApplePieRecipe`
 
-11. Roep hiermee van uit de `Main` klasse alle methodes aan  `ApplePieRecipe`, zodat als we de `public static void main` methode laten draaien we alle stappen geprint zien worden.
+11. Roep hiermee van uit de `Main` klasse alle methodes aan  `ApplePieRecipe`, zodat als we de `public static void appeltaartrecept.main` methode laten draaien we alle stappen geprint zien worden.
 
-12. De oplettende student heeft gezien dat we helemaal niets doen met de objecten van `Ingredient`. En dat terwijl we daar zo veel moeite in hebben gestopt. Maar iemand die deze app draait zou ook wel willen weten welke ingredienten nodig zijn voor de recept. Maak daarom een `public void` methode genaamd printIngredients aan in `ApplePieRecipe`. Laat deze methode voor ieder ingredient een `System.out.println("ingredient.getAmount() + " " + ingredient.getUnit() + " " + ingredient.getName())` uitprinten. (Vervang natuurlijk ingredient met de naam van het ingredient dat je het gegeven bij het instantieren.)
+12. De oplettende student heeft gezien dat we helemaal niets doen met de objecten van `appeltaartrecept.Ingredient`. En dat terwijl we daar zo veel moeite in hebben gestopt. Maar iemand die deze app draait zou ook wel willen weten welke ingredienten nodig zijn voor de recept. Maak daarom een `public void` methode genaamd printIngredients aan in `ApplePieRecipe`. Laat deze methode voor ieder ingredient een `System.out.println("ingredient.getAmount() + " " + ingredient.getUnit() + " " + ingredient.getName())` uitprinten. (Vervang natuurlijk ingredient met de naam van het ingredient dat je het gegeven bij het instantieren.)
 
 13. Roep ook deze aan vanuit de `Main` methode, zodat eerst de ingredienten een voor een worden geprint gevolgd door elke stap van het recept.
 
