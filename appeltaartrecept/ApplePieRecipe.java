@@ -61,6 +61,7 @@ public class ApplePieRecipe {
         System.out.println(bakmeel.getAmount() + " " + bakmeel.getUnit() + " " + bakmeel.getName() );
         System.out.println(ei.getAmount() + " " + ei.getUnit() + " " + ei.getName() );
         System.out.println(vanillesuiker.getAmount() + " " + vanillesuiker.getUnit() + " " + vanillesuiker.getName() );
+        System.out.println(zout.getAmount() + " " + zout.getUnit() + " " + zout.getName());
         System.out.println(apples.getAmount() + " " + apples.getUnit() + " " + apples.getName() );
         System.out.println(kristalsuiker.getAmount() + " " + kristalsuiker.getUnit() + " " + kristalsuiker.getName() );
         System.out.println(kaneel.getAmount() + " " + kaneel.getUnit() + " " + kaneel.getName() );
